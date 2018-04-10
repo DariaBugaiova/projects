@@ -1,0 +1,26 @@
+ .header{
+            background-image: linear-gradient(
+                to right,
+                rgba($color-primary-light,0.8),
+                rgba($color-primary-dark,0.8)),
+            url(../img/Baking_Pie_Cake_Lilac_487487.jpg); 
+            background-size: cover;/* масштаб по размеру*/
+            background-position: top; /*cut img to center */ 
+            position: relative; 
+
+           clip-path:polygon(0 0, 100% 0, 100% 75vh, 0 100%); /*point coordinate for cut the corner
+           http://bennettfeely.com/clippy/ */
+       
+            &__logo-box{
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+            }
+             
+            &__text-box{
+            position: absolute;
+            top: 40%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+       }
