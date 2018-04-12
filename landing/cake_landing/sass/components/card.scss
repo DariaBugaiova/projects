@@ -1,0 +1,145 @@
+.card {
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	height: 50rem;
+
+	&__side{
+	  background-color: orangered;
+	  color: #fff;
+	  font-size: 2rem;
+
+      height: 50rem;
+	  transition: all .8s ease;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  border-radius: 3px;
+	  box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+	  overflow: hidden;
+
+	  backface-visibility: hidden;
+
+	  &--front{
+	  	background-color: #fff;
+	  }
+
+	  &--back{	  	
+	  	transform: rotateY(180deg);
+	  	text-align: center;
+
+		&--1 {
+			background-image: linear-gradient(to right bottom,
+			 rgba($color-secondary-dark,.85),
+			 rgba($color-secondary-light,.85));
+		}
+	  }
+	}
+	
+
+	&:hover &__side--front {
+	  transform: rotateY(180deg);
+	}
+
+	&:hover &__side--back {
+	  transform: rotateY(0);
+	}
+	//img-unsplash site
+	//front side
+	&__picture {
+		background-size: cover;
+		background-color: rgba(201, 76, 76, .4);
+		height: 23rem;
+		background-blend-mode: screen;
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+		&--1{
+		  background-image: url(../img/brina-blum-114391-unsplash.jpg);
+		  
+		}
+
+		&--2{
+		  background-image: url(../img/alireza-etemadi-422369-unsplash.jpg);
+		  
+		}
+
+		&--3{
+		  background-image: url(../img/1481462116_screenshot_14.jpg);
+		  
+		}
+	}
+
+	&__heading{
+		font-size: 2.8rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #fff;
+		position: absolute;
+		top: 12rem;
+		right: 2rem;
+	}
+
+	&__heading-span{
+		padding: 1rem, 1.5rem;
+		box-decoration-break: clone;
+		-webkit-box-decoration-break: clone;
+
+		&--1 {
+			background-image: linear-gradient(to right bottom,
+			 rgba($color-secondary-dark,.85),
+			 rgba($color-secondary-light,.85));
+		}
+	}
+
+	&__details {
+		padding: 3rem;
+		
+		ul {
+			list-style: none;
+			width: 80%;
+			margin: 0 auto;
+			color: $color-grey-dark;
+			li{
+				text-align: center;
+				font-size: 1.5rem;
+				padding: 1rem;
+				
+				&:not(:last-child) {
+					border-bottom: 1px solid $color-grey-dark;
+				}
+			}
+		}
+	}
+
+	//back side
+	&__cta{
+		position: absolute;
+		top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    width: 90%;
+
+	}
+
+	&__price-box{
+
+	  text-align: center;
+	  color:#fff;
+	  margin-bottom: 8rem;
+	  text-align: center;
+	}
+
+
+	&__price-only{
+		text-align: center;
+	  font-size: 2rem;
+	  text-transform: uppercase;
+	}
+
+	&__price-value{
+		font-size: 6 rem;
+		font-weight: 100;
+	}
+}
