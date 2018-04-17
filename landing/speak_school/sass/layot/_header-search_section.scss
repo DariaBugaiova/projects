@@ -1,0 +1,38 @@
+.search-section {
+  width: 60%;
+  display: inline-block;
+  margin: 0 auto; 
+}
+
+.search {
+  width: 50vw;
+  background-color: #fff;
+  height: 3rem; 
+  position: relative;
+  float: left;
+}
+
+
+
+.triangle-bottom{  
+    border:none;    
+    background-color: #fff;
+    font-size: 1rem;
+
+    &:focus{
+        outline: none !important;
+        border:none
+    }    
+}
+
+.gsp-input__search-input{
+  width: 40vw;
+  height: 3rem;
+  border: none;
+}
+
+ 
+.glyphcicon-search{
+    background-color: #fff !important; 
+
+}

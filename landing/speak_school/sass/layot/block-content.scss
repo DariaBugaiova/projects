@@ -1,0 +1,41 @@
+///block1
+
+.header__icon-leaf{
+    display: inline-block;
+    float: left;    
+}
+
+.leaf{
+    background-image: url(../img/leaf.png);
+    background-color: transparent;    
+    display: inline-block;
+    float: right;
+}
+
+.header__text{    
+    display: inline-block;   
+}
+
+
+.block-content{
+    position: relative;    
+}
+
+.context__heading{
+    text-align: left;   
+}
+
+.glyphicon-education{
+  float: left;    
+}
+
+.scroll-up{
+    float: right; 
+ }
+
+
+
+
+
+
+

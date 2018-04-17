@@ -1,0 +1,69 @@
+$smartphone: 480px;
+$tabletPortrait: 767px;
+$tabletLandscape: 1024px;
+$desktop: 1174px;
+$largeScreen: 1400px;
+
+@mixin respondTo($media) {
+  @if $media == smartphone {
+    @media (max-width: $smartphone) { @content; }
+  }
+  @else if $media == tablet {
+    @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) { @content; }
+  }
+  @else if $media == smallScreen {
+    @media (max-width: $desktop) { @content; }
+  }
+  @else if $media == desktop {
+    @media (min-width: $desktop) { @content; }
+  }
+}
+
+
+
+///for desktop
+// div {
+//     // regular styles here
+//     @include respondTo(desktop) {
+//         &:hover { background: blue; } // only add the hover effect on desktop browsers
+//     }
+// }
+
+
+//bell is recieved
+// @mixin alerted() {
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     top: 6px; right: 6px;
+//     height: 8px; width: 8px;
+//     border-radius(10px);
+//     background-color: gold;
+//   }
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     top: 0; right: 0;
+//     height: 20px; width: 20px;
+//     border-radius(20px);
+//     background-color: transparent;
+//     border: solid gold;
+//     border-width: 2px; // animates
+//     box-sizing(border-box);
+//    animation($name: alertMe);
+//   }
+// }
+
+// @keyframes alertMe {
+//   // -vendor prefixes omitted for brevity, but should be used in production
+//   from {
+//     border-width: 3px;
+//     border-color: gold;
+//   }
+//   to {
+//     border-width: 0;
+//     border-color: rgba(gold, .1);
+//   }
+// }
+
+

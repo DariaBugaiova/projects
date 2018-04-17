@@ -1,0 +1,28 @@
+.bell{
+    // @include alerted;
+    width: 3rem;
+    position: relative;
+    float: left;      
+}
+
+.bell__number{
+ position: absolute;
+background-color: red;
+border-radius: .5rem;
+border-radius: 2rem;
+padding: 0 .6rem;
+top: -1rem;
+right: 0;
+font-family: RobotoR;
+font-weight: bold;
+}
+
+.bell-icon{
+    height: 4rem;
+    width: 4rem;
+}
+.glyphicon-bell{
+    bottom:0;
+    font-size: 3rem !important;
+
+}

@@ -1,0 +1,176 @@
+///CARD
+
+.card-container{
+  width: 24rem;
+  height: 45rem;
+  position: relative;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow:1px 2px 5px 0px #888888;
+  margin: 0 auto;
+}
+
+.card-header{
+  position: relative;
+  border-bottom: none;
+  background-color: #fff;
+}
+
+.card-header__logo{
+    position: absolute;
+    top: -3.5rem;
+    left: 1rem;
+    padding: 1rem .5rem;
+    z-index: 5;
+    background-color: #fff;
+    box-shadow:1px 5px 5px 2px #888888;
+    border-radius: .3rem;
+    text-align: center;
+
+}
+
+.image-logo{
+    max-width: 100%;
+    height: auto; 
+}
+
+.card__image{
+  display: inline-block;
+  height: auto;
+  margin-top: 1rem;
+  box-shadow: 0px 6px 20px .1px #888888
+}
+
+.image-class{
+    max-width: 100%;
+    height: auto;
+}
+
+.card-header__icon-star{
+  font-size: 2rem;
+  float: right;
+  padding: 0 1.5rem;
+  color: #015297;
+}
+.card-body{
+    font-family: RobotoLight;
+  font-size: 1.4rem; 
+  padding-bottom: 2rem; 
+}
+
+.card-main{
+    position: relative;    
+}
+
+.card-main__mark{
+    display: inline-block;
+    width: 2rem;    
+    background-color: #005298;
+    color: #fff;
+    float: left; 
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    border-radius: .5rem;
+}
+.card-context{
+  padding-left: 1rem;
+}
+
+.card-main__header{
+  display: inline-block;
+  padding-left: 1.5rem;
+  font-weight: bold;
+  font-family: RobotoR;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  letter-spacing: -.08rem;
+  text-align: left !important;
+}
+
+.card-main__describe{
+    color: rgba(0, 0, 0, 0.6);
+    font-family: RobotoR;
+    font-size: 1.4rem; 
+}
+
+.card-main__paragraph{
+    display: block;
+    width: 18rem;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.footer__icon{
+  display: inline-block; 
+  width: 2.5rem;
+  font-size: 2.2rem;
+  color: rgba(0, 0, 0, 0.4);
+
+  i{
+  top: -1.5rem;
+}
+}
+
+.footer-content{
+  padding: 1.5rem 0;
+  text-align: left !important;
+}
+
+.footer__text{
+  width: 7rem;
+  display: inline-block;  
+
+  font-family: RobotoLight;
+  font-size: 1.4rem;  
+
+     p{
+     color: rgba(0, 0, 0, 0.4);
+     line-height: 2.3rem;
+    }
+}
+
+button{
+  outline: none !important;
+}
+
+hr {
+    margin-top: 4rem 0;
+}
+
+
+//block courses
+.block-courses{
+    position: relative;
+    margin-top: - 2rem;
+    background-color: #f2f2f2;
+}
+///carusel
+.slider__content{
+    
+//     padding-bottom: 2rem;
+// }
+// .slider__content{
+//     padding-top: 2rem;
+
+    .row{
+        max-width: 100% !important;     
+     
+    } 
+}
+
+.row [class^="col-"]:not(:last-child){
+    margin-right: 0 !important;
+    padding-bottom: 2rem;
+
+}
+
+.block-courses__name{
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+
+  font-family: RobotoLight;
+  font-size: 2.8rem;
+  line-height: 3rem;
+}
