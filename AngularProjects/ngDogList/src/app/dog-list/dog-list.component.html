@@ -1,0 +1,50 @@
+<div>
+  <div class="collection">
+    <div *ngFor="let dog of dogs"
+         [ngClass]="dogStyle(dog)" >{{dog.name}}</div>
+  </div>
+
+  <div class="row">
+  <div class="col s3">
+    <div [ngClass]="cardStyle('count')" (click)="setDisplay('count')">
+      <div [ngClass]="{'white-text': isActive('count')}" class="card-content">
+        <div class="card-title">Number of dogs</div>
+      </div>
+    </div>
+  </div>
+  <div class="col s3">
+    <div [ngClass]="cardStyle('leashest')" (click)="setDisplay('leashest')">
+      <div [ngClass]="{'white-text': isActive('leashest')}" class="card-content">
+        <div class="card-title">Number of dogs with Leashes</div>
+      </div>
+    </div>
+  </div>
+  <div class="col s3">
+    <div [ngClass]="cardStyle('color')" (click)="setDisplay('color')">
+      <div [ngClass]="{'white-text': isActive('color')}" class="card-content">
+        <div class="card-title">Dogs colors</div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div [ngSwitch]="display">{{display}}</div>
+
+  <ng-template ngFor let-dog [ngForOf]="dogs">
+  <dog-details *ngIf = "dog.leash" [(name)]="dog.name" [(color)] = "dog.color"></dog-details>
+  </ng-template>
+
+  <!--<dog-details-->
+                 <!--[(name)]="dog1.name"-->
+                 <!--[(color)]="dog1.color"-->
+                 <!--(bark)="doBark(dog1.name)">-->
+                 <!--&lt;!&ndash;(nameChange)="changeDog1($event)"&ndash;&gt;-->
+                 <!--&lt;!&ndash;(colorChange)="changeColorDog1($event)"&ndash;&gt;-->
+
+
+<!--</dog-details>-->
+<!--<app-dog-details [name]="dog2.name" [color]="dog2.color"  (bark)="doBark(dog2.name)"></app-dog-details>-->
+</div>
+
+
+

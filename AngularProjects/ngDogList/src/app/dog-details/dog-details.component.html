@@ -1,0 +1,8 @@
+<!--<h2>-->
+  <!--Dog-details-->
+<!--</h2>-->
+<p>Name: {{name}}</p>
+<p >Color:<span [ngStyle]="colorStyles">{{color}}</span></p>
+<input (input)="handleNameChange($event)" type="text" placeholder="Name"/>
+<input (input)="handleColorChange($event)" type="text" placeholder="Color"/>
+<button class="btn btn-waves" (click)="handleClick()">Bark</button>
