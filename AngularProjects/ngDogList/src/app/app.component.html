@@ -1,11 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
   <div class="container">
-  <h1 uppercase>
+  <h1>
+    Welcome to {{title}}
      {{ namef }}
   </h1>
-    <h2 *ifnot="namef" uppercase>No name yet</h2>
-    <input type="text" placeholder="title" [(ngModel)]="namef"/>
+    <change-title></change-title>
+    <!--ifnot="namef" uppercase - h2 -->
+    <h2 >No name yet</h2>
+    <input type="text" placeholder="title" [(ngModel)]="title"/>
+
 
     <img [ngStyle]="{'width':'400px', 'height': '300px'}" src="https://cdn.pixabay.com/photo/2016/02/11/17/00/dog-1194087_960_720.jpg" [alt]="Howavard"/>
 
