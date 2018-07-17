@@ -1,0 +1,23 @@
+
+
+  <div class="menu-edit">
+  <div class="delete-btn">
+    <button class="btn form-delete--btn--open"
+            type="button"
+            (click)="toogleVis()">
+             Выбрать карточки для удаления
+      </button>
+    </div>
+
+  <div class="edit-form">
+  <app-form-delete-dogs [vis]="vis" (deleteCards)='toogleVis()' class="main-field">
+  </app-form-delete-dogs>
+  <app-form-push-card></app-form-push-card>
+  <!-- <app-form-search [str] = "str" (searchStrChange) = "searchStrChange($event)"></app-form-search> -->
+  </div>
+  </div>
+  <div class="doglist-content--center">
+    <app-dog-list [str]="str" [vis]="vis"></app-dog-list>
+  </div>
+
+

@@ -1,0 +1,27 @@
+@import '~@angular/material/theming';
+// @import './styles/general';
+$custom-typography: mat-typography-config($font-family: '"Oswald", sans-serif;');
+@include mat-core();
+/* $primary: mat-palette($mat-indigo); */
+// @include angular-material-theme($custom-theme);
+
+$custom-theme-primary: mat-palette($mat-teal);
+$custom-theme-accent: mat-palette($mat-lime, 300, 200, 600);
+$custom-theme-warn: mat-palette($mat-indigo);
+
+$custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
+
+//@import url(http://fonts.googleapis.com/css?family=Roboto;Condensed:400,300,700);
+
+@include angular-material-theme($custom-theme);
+
+@font-face {
+  font-family: Roboto, sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Roboto');
+}
+html {
+  font-size: 62.5%;
+  font-family: "Oswald", sans-serif;
+}
+
+// body { font-size: 1rem; }

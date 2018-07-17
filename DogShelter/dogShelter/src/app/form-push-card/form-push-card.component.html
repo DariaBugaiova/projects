@@ -1,0 +1,60 @@
+
+<div class="form-field">
+<div class="form-btn">
+  <button class="btn form-btn--open" type="button" (click)="toogleVis()">
+    Добавить карточку
+ </button>
+</div>
+
+<div [ngClass] = "{'main-field--move': vis}" class="main-field">
+<!--<input type="text" [(ngModel)]="dog.breed" class="form-item__inp dropdown-item" placeholder="Порода">-->
+<!--<input type="text" [(ngModel)]="dog.character_feature" class="form-item__inp dropdown-item" placeholder="Характер">-->
+<!--<input type="text" [(ngModel)]="dog.age" class="form-item__inp dropdown-item" placeholder="Сколько лет">-->
+
+
+  <mat-form-field float>
+    <input type="text"
+           class="form-item__inp dropdown-item"
+           #nameInput ="ngModel"
+           [(ngModel)]="dog.breed"
+           placeholder="Порода"
+           matInput
+           required>
+    <mat-error *ngIf="nameInput.errors?.required">
+      Поле обязательно для заполнения
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field float>
+    <input type="text"
+           class="form-item__inp dropdown-item"
+           #breedInput = "ngModel"
+           [(ngModel)] = "dog.character_feature"
+           placeholder="Характер"
+           matInput
+           required>
+    <mat-hint align="end">Какие черты, можно несколько</mat-hint>
+
+    <mat-error *ngIf="breedInput.errors?.required">
+      Поле обязательно для заполнения
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field float>
+    <input type="text"
+           class="form-item__inp dropdown-item"
+           #ageInput = "ngModel"
+           [(ngModel)] = "dog.age"
+           placeholder="Сколько лет"
+           matInput
+           required>
+    <mat-hint align="end">Укажите к-ство лет/месяцев</mat-hint>
+    <mat-error *ngIf="ageInput.errors?.required">
+      Поле обязательно для заполнения
+    </mat-error>
+  </mat-form-field>
+
+
+<button (click)="addNewDog()" class="btn add-btn">Добавить</button>
+</div>
+</div>

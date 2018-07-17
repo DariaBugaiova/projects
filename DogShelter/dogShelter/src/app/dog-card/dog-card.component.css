@@ -1,0 +1,101 @@
+.mycards{
+  width: 30rem !important;
+  height: auto;
+  background-color: linen;
+  box-shadow: 5px 8px 16px #888;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  margin-left: 1rem !important;
+
+  display: inline-block;
+}
+
+.content--center{
+  text-align: center;
+  padding-bottom: 0.5rem;
+
+}
+
+.dog-img{
+  width: 28rem;
+  height: 19rem;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.btn__dog{
+  padding: 5px;
+  width: 14rem;
+  background-color:  hsl(81, 100%, 70%);
+  box-shadow: 1px 2px 5px #888;
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto;
+  display: block;
+  font-size: 12pt;
+  font-family: 'Roboto', sans-serif;
+
+}
+.btn__dog:hover{
+  background-color: rgb(141, 206, 66);
+  box-shadow: 1px 4px 8px #888;
+
+}
+
+
+.mycard-content{
+  height: 1.6rem;
+  overflow: auto;
+}
+
+.mycard-title{
+  border-bottom: 1.4px solid rgba(80, 67, 60, .4);
+
+  padding-bottom: 5px;
+  background-color: hsl(81, 100%, 70%);
+}
+
+.items{
+  text-align: left;
+  list-style: none;
+}
+
+.mycard-title{
+  font-size: 28pt;
+  color: rgb(56, 50, 50);
+}
+
+.dog-list{
+  width: 21rem;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.marked {
+  font-weight: bold;
+  color: blue;
+}
+.transform-card {
+  transform: scale(1.05);
+  transition: .5s all;
+  z-index: 10;
+}
+
+.block1__deleted {
+  text-align: center;
+}
+
+.chbox--visible{
+  display: none;
+}
+
+.check-card {
+  width: 4rem;
+}
+
+.inp-check{
+  position: absolute;
+  transform: scale(1.5);
+}

@@ -1,0 +1,56 @@
+<div class="col s4 mycards" [id]="dog.id" appHover
+      [routerLink]="['item', dog.id]">
+  <div class="mycard card-dog content--center" (click)="markedHeader()">
+    <div class="mycheckbox check-card">
+      <input  class="inp-check"
+              [ngClass] ="{'chbox--visible': vis}"
+              [checked]="isCheck"
+              type="checkbox"
+              (click)="changeCard($event)" >
+    </div>
+
+    <div class="img">
+      <img class="mycard-dog__img dog-img" src={{dog.url}} alt="dog-img">
+    </div>
+    <div class="mycard__content content--center">
+      <div class="content__header" >
+        <h2 class="mycard-title" [ngClass]="{'marked': isMarked}"><em>Our Dog</em></h2>
+      </div>
+      <div class="content__text card-content">
+        <p class="mycard-content__paragraph"> <b>Information about dog </b></p>
+
+        <div class="mycard-content__list dog-list">
+          <li *ngIf ="!editing" class="dog-list__items items" >
+            <ul class="items__bread">  Breed: {{dog.breed}}</ul>
+            <ul class="items__feature">Character feature: {{dog.character_feature}}</ul>
+            <ul class="items__size">   Size:{{dog.age}}</ul>
+          </li>
+
+          <div *ngIf = "editing" class="dog-list__items items" >
+            Breed:
+            <br>
+            <input class="items__bread inp--edit" [(ngModel)]="dog.breed">
+            <br>
+            Character feature:
+            <br>
+            <input class="items__feature inp--edit" [(ngModel)]="dog.character_feature">
+            <br>
+            Age:
+            <br><input class="items__size inp--edit" [(ngModel)]="dog.age">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mycard-dog__btn mybtn" *ngIf ="!editing">
+      <button class="btn__dog" [name]="btnDel" (click) ="change($event)"
+      >Delete from list</button>
+    </div>
+    <div class="mycard-dog__btn mybtn" *ngIf ="editing">
+      <button class="btn__dog" (click) ="change(dog); editCard()">
+        Save changed data
+      </button>
+    </div>
+
+  </div>
+</div>

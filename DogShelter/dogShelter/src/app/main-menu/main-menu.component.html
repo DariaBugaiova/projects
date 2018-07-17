@@ -1,0 +1,50 @@
+
+<div class="toolbar-menu">
+  <div class= "toolbar--fixed">
+    <div class="toolbar-header">
+       <div class="header-text">
+       <div class="primary-toolbar">Shelter for dogs</div>
+       <div class="primary-toolbar__discribe">Our life is happier with dogs</div>
+       </div>
+     </div>
+
+  <mat-toolbar class="mat-toolbar-main">
+    <div class="toolbar-content">
+    <div class="main-menu toolbar-main">
+      <li class = "main-menu__item" routerLinkActive="active" >
+        <button class="main-item-btn item-btn" mat-fab color="accent">
+          <mat-icon mat-fab color="warn" class="menu-main-icon item-icon" routerLink="">home</mat-icon>
+        </button>
+      </li>
+      <li class = "main-menu__item">
+        <div  (mouseleave)='showContent()'>
+          <a class="menu-item item" (mouseover)='showContent()'>Dog`s info</a>
+
+          <div class="toolbar-container" class="add-menu" [ngClass] ='{"add-menu--visible": vis_content}'>
+              <div class="toolbar__dogs-content">
+                <div class="toolbar-menu">
+                <mat-toolbar class="add-menu-item">
+                  <a class=" menu-item add-menu-item__a" routerLink="breed">Dog Breeds</a>
+                </mat-toolbar>
+                <mat-toolbar class="menu-item add-menu-item">
+                  <a class= "menu-item add-menu-item__a" routerLink="training">Dog Training</a>                  
+                </mat-toolbar>
+              </div>
+             </div>
+            </div>
+            </div>
+      </li>
+      <li class = "main-menu__item">
+          <a class="menu-item item" routerLink= "contacts" >Contacts</a>
+      </li>
+  <!-- <li class="main-menu__item" routerLinkActive="active">
+    <a class="menu-item item" [routerLink] ="['item', '5']" >Item</a>
+  </li> -->
+      </div>
+      </div>
+</mat-toolbar>
+</div>
+    <div class="block-header header-donate">
+    </div>
+</div>
+<router-outlet ></router-outlet>

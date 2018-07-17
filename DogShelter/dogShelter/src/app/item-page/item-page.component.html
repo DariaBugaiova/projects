@@ -1,0 +1,10 @@
+
+<div class = "item-container">
+<div class="btn-edit">
+<input type="button" class="btn-edit--open" value="Редактирование карточки" (click)="editCard()">
+</div>
+<app-dog-card [vis]="this.vis" [editing]="this.editing"
+              (orderChange)="changeCard($event)"
+  [dog]="this.dogWithId">
+</app-dog-card>
+</div>

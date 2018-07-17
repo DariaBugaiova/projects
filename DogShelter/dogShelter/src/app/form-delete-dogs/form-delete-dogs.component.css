@@ -1,0 +1,14 @@
+.main-field--move {
+  display: none !important;
+}
+.form-delete-btn--open {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  background-color: cornsilk;
+  margin:1rem 0;
+  padding: 1rem;
+  box-shadow: 1px 2px 8px 1px #888;
+  font-size: 14px;
+
+}

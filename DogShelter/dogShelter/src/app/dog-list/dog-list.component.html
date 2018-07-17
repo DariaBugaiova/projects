@@ -1,0 +1,13 @@
+
+<!-- <app-form-search></app-form-search> -->
+<div>
+<app-dog-card
+  [vis]="vis"
+  (orderChange) ="deleteDog($event)"
+  (orderChecked)="changeCheckedDog($event)"
+  
+  *ngFor="let mydog of this.data|search:str"
+  [dog]="mydog"
+  [id]="mydog.id">
+</app-dog-card>
+</div>

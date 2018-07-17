@@ -1,0 +1,37 @@
+.breed-container {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.header-name {
+    text-align: center;
+    padding-top: 2rem;
+    color: rgba(132, 0, 255, 1);
+}
+
+.img-breed {
+   width: 22rem;
+   height: 20rem;
+   background: url( '../../../img_dog/img-breed-hound.jpg');
+   background-repeat: no-repeat;
+   float: left;
+   margin-right: 3rem;
+}
+
+.card-breed {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    padding: 5rem 0;
+}
+
+.header-breed>h2 {
+    margin: 0;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.content-breed {
+    padding-right: 2rem;
+}

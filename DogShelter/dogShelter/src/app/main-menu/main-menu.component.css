@@ -1,0 +1,130 @@
+.main-menu__item {
+  text-decoration: none;
+  display: inline-block;
+  margin:  0 20px;
+  text-align: center;
+}
+
+.item {
+  text-decoration: none;
+}
+
+.main-menu {
+  height: 60px;
+  width: 100px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.item-btn,
+.main-item-btn {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  color: rgb(221, 125, 125);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.item-btn:hover {
+  background-color: rgba(0,0,0,0.38);
+  transform: scale(1.2);
+  transition: all 1s;
+
+}
+
+.toolbar-menu {
+  width: 100%;
+}
+
+.toolbar-header {
+  background-color: rgba(40, 32, 116, 0.79);
+  color: rgba(255, 255, 255, 1);
+  height: 40px;
+}
+
+.mat-toolbar-main {
+  background: rgba(255, 255, 255, 0.92);
+  height: 50px;
+}
+
+.header-text {
+  width: 200px;
+  padding-left: 30px;
+}
+
+.toolbar-header-text {
+  padding-left: 2rem;
+}
+
+.toolbar-content {
+  width: 100%;
+}
+
+.primary-toolbar {
+  height: 2rem;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+
+}
+
+.primary-toolbar__discribe {
+  font-size: 1.2rem;
+  height: 1.5rem;
+  position: absolute;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.header-donate {
+  max-width: 130rem;;
+  height: 30rem;
+  position: relative;
+  background-image: url("../../../img_dog/header-shelter.jpg");
+  margin: 0 auto;
+}
+
+.toolbar--fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.menu-item {
+  color: rgba(144, 240, 0, 1);
+}
+
+.mat-icon{
+  color: rgba(98, 20, 194, 1);
+}
+
+.add-menu {
+  display: none;
+}
+.add-menu--visible {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 200px;
+  margin-left: -50px;
+  overflow: hidden;
+}
+
+.add-menu-item {
+  font-size: 1.4rem;
+  display: block;
+  height: 4rem;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.add-menu-item:hover {
+  background: peachpuff;
+  transition: all 2s;
+}
+
+.add-menu-item__a {
+  text-decoration: none;
+}

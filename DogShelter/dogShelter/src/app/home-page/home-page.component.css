@@ -1,0 +1,29 @@
+.doglist-content--center{
+    margin: 0 auto;
+    max-width: 124.5rem;
+    text-align: center;
+}
+
+.menu-edit {
+  width: 30rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.form-delete--btn--open {
+  width: 30rem;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  background-color: bisque;
+  margin:1rem 0;
+  padding: 1rem;
+  box-shadow: 1px 2px 8px 1px #888;
+  font-size: 14px;
+
+}
+
+.menu-edit {
+  width: 30rem;
+  padding-left: 4rem;
+}

@@ -1,0 +1,19 @@
+.btn-edit--open {
+  width: 300px;
+  text-decoration: none;
+  border: none;
+  background-color: bisque;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 1px 2px 8px 1px #888;
+}
+
+.item-container {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.btn-edit {
+  margin: 40px 0 20px;
+
+}
